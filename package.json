@@ -1,0 +1,47 @@
+{
+  "name": "pdf2jpg4zip",
+  "description": "Load PDF in Browser and convert to single JPG images with Javascript and create ZIP file for download",
+  "version": "1.0.1",
+  "author": "Based on Work of Matheus Henrique Klem Galvez http://usefulangle.com/post/24/pdf-to-jpeg-png-with-pdfjs ",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niebert/PDF4JPG4ZIP.git"
+  },
+  "main": "./src/index.js",
+  "xbrowser": "./builds/pdf2jpg4zip.min.js",
+  "unpkg": "./builds/pdf2jpg4zip.min.js",
+  "scripts": {
+    "start": "node ./scripts/start.js",
+    "test": "node ./scripts/test.js",
+    "build": "node ./scripts/build.js"
+  },
+  "bin": {
+    "pdf2jpg4zip": "./bin/pdf2jpg4zip.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "builds",
+    "api",
+    "src",
+    "bin"
+  ],
+  "keywords": [
+    "pdf",
+    "jpg",
+    "pdf2jpg",
+    "pdf2jpg4zip",
+    "zip",
+    "converter"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browserify": "16.2.2",
+    "derequire": "2.0.6",
+    "shelljs": "0.8.2",
+    "uglify-js": "3.4.6"
+  },
+  "license": "MIT"
+}
